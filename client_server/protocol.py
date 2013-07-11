@@ -71,7 +71,7 @@ def package_read(bytes):
         packages.append(package_data)
         # Trim bytes for next iteration
         bytes = bytes[Package.HEADER_SIZE+size:]
-    # Breaked, so return package and the tail, that is left in bytes
+    # return package and the tail, that is left in bytes
     return packages, bytes
 
 
