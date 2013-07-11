@@ -2,7 +2,7 @@
 
 from tulip import get_event_loop, tasks, futures
 import functools
-from event_loop import EventLoop
+from . import EventLoop
 
 
 def in_loop_call(loop):
